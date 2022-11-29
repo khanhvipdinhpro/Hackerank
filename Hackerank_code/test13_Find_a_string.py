@@ -7,8 +7,16 @@ def count_substring(string, sub_string):
     return dem
 
 if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
+    string = "BANANANANA"
+    sub_string = "ANA"
     
     count = count_substring(string, sub_string)
     print(count)
+
+"""def count_substring(string, sub_string):
+    count = 0
+    for _ in range(len(string)):
+        if string[_:_ + len(sub_string)] == sub_string:
+            count += 1    
+        
+    return count"""
